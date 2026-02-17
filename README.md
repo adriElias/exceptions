@@ -62,3 +62,22 @@ Error: To make a sale you must first add products
 Testing out-of-bounds access...
 Error: Index 5 out of bounds for length 3
 ```
+## Questions
+### What is a RuntimeException?
+
+When a RuntimeException occurs, it usually indicates a programming error or a situation the programmer could have prevented (for example: dividing by zero, accessing a null object, index out of bounds…).
+
+### What is the difference between a checked exception and an unchecked one like RuntimeException?
+## Difference between Checked and Unchecked Exceptions (Java)
+
+| Checked | Unchecked |
+|--------|-----------|
+| The compiler **forces** you to handle them | The compiler **does not force** you to handle them |
+| Must be **caught with try-catch** or **declared with throws** | No need to catch or declare them |
+| Represent **expected, recoverable errors** | Represent **programming errors or invalid states** |
+| Examples: `IOException`, `SQLException` | Examples: `NullPointerException`, `ArithmeticException` |
+| Extend `Exception` (but not `RuntimeException`) | Extend `RuntimeException` |
+
+**Summary:**  
+-> Checked exceptions are problems caused by external factors and must be handled.  
+-> Unchecked exceptions indicate bugs in the code and are not forced to be handled.
