@@ -7,7 +7,7 @@ public class Sale {
     private double totalPrice = 0;
 
     public double calculateTotal() {
-        System.out.println(products.get(12));
+//        System.out.println(products.get(12));
         if (products.isEmpty()) {
             throw new EmptySaleException();
         }
